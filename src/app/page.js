@@ -14,6 +14,7 @@ import Ninth from '@/components/ninth/Ninth';
 import Tenth from '@/components/tenth/Tenth';
 import Footer from '@/components/footer/Footer';
 import RightMenu from '@/components/right-menu/RightMenu';
+import LeftMenu from '@/components/left-menu/LeftMenu';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,6 +35,7 @@ export default function Home() {
       <Tenth/>
       <Footer/>
       <RightMenu/>
+      <LeftMenu/>
     </main>
   )
 }
