@@ -1,0 +1,33 @@
+.Second {
+    width: 100%;
+    padding: 160px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.Second__advantages-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 160px;
+    color: #2A524C;
+}
+
+.Second__advantages-words {
+    font-size: 32px;
+    color: #323232;
+}
+
+@media (max-width: 800px) {
+    .Second__advantages-cont {
+        font-size: 96px;
+    }
+
+    .Second__advantages-words {
+        width: 200px;
+        /* font-size: 22px; */
+    }
+}
