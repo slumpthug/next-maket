@@ -10,6 +10,7 @@ import titleImgTwo from '../../public/title-part/titleTwo.svg';
 import PartnersPart from '@/components/partners-part/PartnersPart';
 import Seventh from '@/components/seventh/Seventh';
 import Eight from '@/components/eight/Eight';
+import Ninth from '@/components/ninth/Ninth';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function Home() {
       <PartnersPart words='Our' orangeWord='technologies'/>
       <Eight/>
       <TitlePart img={titleImgTwo}/>
+      <Ninth/>
     </main>
   )
 }
