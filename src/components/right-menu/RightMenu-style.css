@@ -1,0 +1,40 @@
+.RightMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 48px 0px 79px 0px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 284px;
+    border-left: 1px solid #EDEEE9;
+}
+
+.RightMenu__user-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 92px;
+}
+
+.vertically {
+    writing-mode: vertical-lr;
+    transform: rotate(-90deg);
+}
+
+.RightMenu__social-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 28px;
+}
+
+@media (max-width: 900px) {
+    .RightMenu {
+        display: none;
+    }
+}
