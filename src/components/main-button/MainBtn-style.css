@@ -1,0 +1,16 @@
+.main-part__btn-two {
+    display: inline-block;
+    position: relative;
+}
+
+.main-part__btn-two-circle {
+    padding: 20px;
+    position: absolute;
+    border-radius: 60px;
+    border: 1px solid #F2C94C;
+    z-index: -1;
+}
+
+.btn-two {
+    padding: 14px 0px 14px 17px;
+}

@@ -4,6 +4,7 @@ import circles from '../../../public/first/elipseGroup.svg';
 import lampa from '../../../public/first/lampa.svg';
 import './First-style.css';
 import Image from 'next/image';
+import MainBtn from '../main-button/MainBtn';
 
 const First = () => {
     return (
@@ -18,7 +19,7 @@ const First = () => {
                     </h1>
                     <div className="main-part__btn-cont">
                         <button className='main-part__btn btn-one'>Portfolio</button>
-                        {/* <MainBtn text='Check with us'/> */}
+                        <MainBtn text='Check with us'/>
                     </div>
                 </div>
                 <div className='main-part__img-cont'>
