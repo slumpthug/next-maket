@@ -1,0 +1,93 @@
+.Third {
+    padding: 0px 165px 160px 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Third__content {
+    display: flex;
+    column-gap: 70px;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.Third__card-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 140px;
+}
+
+.Third__card {
+    width: 372px;
+    height: 319px;
+    padding: 32px 56px;
+    border: 1px solid #2A524C;
+    border-radius: 40px;
+}
+
+.Third__card-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 190px;
+    margin-bottom: 16px;
+}
+
+.Third__card-number {
+    font-size: 16px;
+    color: #323232;
+}
+
+.Third__card-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 19px;
+    color: #2A524C;
+}
+
+.Third__card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 12px;
+}
+
+.Third__card-list li {
+    padding-left: 2rem;
+    background-image: url(../../../public/third/check-circle.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 22px;
+}
+
+@media (max-width: 1880px) {
+    .Third {
+        padding: 0px 0px 160px 0px;
+    }
+}
+
+@media (max-width: 1560px) {
+    .Third__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Third__card-cont {
+        flex-direction: row;
+        column-gap: 140px;
+    }
+
+    .Third__lampaTwo {
+        width: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .Third__card-cont {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
