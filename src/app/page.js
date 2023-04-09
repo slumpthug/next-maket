@@ -12,6 +12,7 @@ import Seventh from '@/components/seventh/Seventh';
 import Eight from '@/components/eight/Eight';
 import Ninth from '@/components/ninth/Ninth';
 import Tenth from '@/components/tenth/Tenth';
+import Footer from '@/components/footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,7 @@ export default function Home() {
       <TitlePart img={titleImgTwo}/>
       <Ninth/>
       <Tenth/>
+      <Footer/>
     </main>
   )
 }
