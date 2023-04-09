@@ -108,6 +108,10 @@
 }
 
 @media (max-width: 1520px) {
+    .Fourth {
+        padding: 100px 0px 20px 0px;
+    }
+
     .Fourth__cont {
         padding: 0px 0px;
         display: flex;
@@ -165,6 +169,10 @@
 }
 
 @media (max-width: 800px) {
+    .Fourth {
+        padding: 30px 0px 20px 0px;
+    }
+
     .Fourth__card {
         width: 150px;
     }

@@ -92,3 +92,9 @@
         width: 344px;
     }
 }
+
+@media (max-width: 600px) {
+    .Eighth {
+        padding: 40px 0px 40px 0px;
+    }
+}

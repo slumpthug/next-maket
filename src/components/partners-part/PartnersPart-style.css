@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .PartnersPart__slider :nth-child(2n) {
@@ -30,6 +31,7 @@
 
 @media (max-width: 1000px) {
     .PartnersPart {
+        padding: 40px 0px 60px 0px;
        text-align: center;
     }
 
