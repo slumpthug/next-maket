@@ -1,0 +1,9 @@
+.TitlePart {
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.TitlePart__titleImg {
+    width: 100%;
+}
