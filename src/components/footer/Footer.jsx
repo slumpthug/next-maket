@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='Footer__bottom-cont'>
-                <Image width="83px" src={logo} alt="logo" />
+                <Image width="83px" src={logo} alt="company's logo" />
                 <span className='Footer__copyright'>Copyright © 2022 IVAX</span>
                 <div className='Footer__rules-links'>
                     <a href="#">Terms of Use</a>

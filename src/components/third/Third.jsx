@@ -12,7 +12,7 @@ const Third = () => {
                 <div className='Third__card-cont'>
                     <div className="Third__card">
                         <div className='Third__card-logo'>
-                            <Image src={cardLogo} alt="" />
+                            <Image src={cardLogo} alt="pen logo" />
                             <span className='Third__card-number'>01</span>
                         </div>
                         <h4 className='Third__card-title'>
@@ -27,7 +27,7 @@ const Third = () => {
                     </div>
                     <div className="Third__card">
                         <div className='Third__card-logo'>
-                            <Image src={cardLogo} alt="" />
+                            <Image src={cardLogo} alt="pen logo" />
                             <span className='Third__card-number'>02</span>
                         </div>
                         <h4 className='Third__card-title'>
@@ -40,11 +40,11 @@ const Third = () => {
                         </ul>
                     </div>
                 </div>
-                <Image className='Third__lampaTwo' src={lampaTwo} alt="" />
+                <Image className='Third__lampaTwo' src={lampaTwo} alt="bulb" />
                 <div className='Third__card-cont'>
                     <div className="Third__card">
                         <div className='Third__card-logo'>
-                            <Image src={cardLogo} alt="" />
+                            <Image src={cardLogo} alt="pen logo" />
                             <span className='Third__card-number'>03</span>
                         </div>
                         <h4 className='Third__card-title'>
@@ -58,7 +58,7 @@ const Third = () => {
                     </div>
                     <div className="Third__card">
                         <div className='Third__card-logo'>
-                            <Image src={cardLogo} alt="" />
+                            <Image src={cardLogo} alt="pen logo" />
                             <span className='Third__card-number'>04</span>
                         </div>
                         <h4 className='Third__card-title'>

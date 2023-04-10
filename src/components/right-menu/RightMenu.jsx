@@ -16,13 +16,13 @@ const RightMenu = () => {
             </div>
             <div className="RightMenu__social-part">
                 <a href="#">
-                    <Image src={instLogo} alt="" />
+                    <Image src={instLogo} alt="instagram logo" />
                 </a>
                 <a href="#">
-                    <Image src={instLogo} alt="" />
+                    <Image src={instLogo} alt="instagram logo" />
                 </a>
                 <a href="#">
-                    <Image src={instLogo} alt="" />
+                    <Image src={instLogo} alt="instagram logo" />
                 </a>
             </div>
         </div>

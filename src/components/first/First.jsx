@@ -9,7 +9,7 @@ import MainBtn from '../main-button/MainBtn';
 const First = () => {
     return (
         <div className='First'>
-            <Image className='First__logo' src={logo} alt="logo" />
+            <Image className='First__logo' src={logo} alt="company`s logo" />
             <div className='main-part'>
                 <div className='main-part__title-cont'>
                     <h1 className="main-part__title">
@@ -24,7 +24,7 @@ const First = () => {
                 </div>
                 <div className='main-part__img-cont'>
                     <Image className='circles-img' src={circles} alt="circles" />
-                    <Image className='lampa-img' src={lampa} alt="lampa" />
+                    <Image className='lampa-img' src={lampa} alt="bulb" />
                 </div>
             </div>
         </div>

@@ -19,56 +19,56 @@ const Seventh = () => {
             </div>
             <div className='Seventh__card-cont'>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>
                     </div>
                 </div>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>
                     </div>
                 </div>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>
                     </div>
                 </div>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>
                     </div>
                 </div>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>
                     </div>
                 </div>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>
                     </div>
                 </div>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>
                     </div>
                 </div>
                 <div className="Seventh__card">
-                    <Image className='Seventh__card-img' src={cardImg} alt="" />
+                    <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
                     <div className='Seventh__card-info'>
                         <span>DESIGN</span>
                         <h4>Unique Product Design</h4>

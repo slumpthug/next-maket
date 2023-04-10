@@ -10,10 +10,10 @@ const Eight = () => {
             <h2 className='main__title'>What our clients <span className='orange-text'>say about us</span></h2>
             <div className='Eighth__cont'>
                 <div className='Eighth__img-wrapper'>
-                    <Image className='Eighth__broski' src={broski} alt="" />
-                    <Image className='Eighth__broski' src={broski} alt="" />
-                    <Image className='Eighth__broski' src={broski} alt="" />
-                    <Image className='Eighth__broskiTwo' src={broskiTwo} alt="" />
+                    <Image className='Eighth__broski' src={broski} alt="woman in black dress" />
+                    <Image className='Eighth__broski' src={broski} alt="woman in black dress" />
+                    <Image className='Eighth__broski' src={broski} alt="woman in black dress" />
+                    <Image className='Eighth__broskiTwo' src={broskiTwo} alt="the man in a suit" />
                 </div>
                 <div className='Eight__info'>
                     <h2>James Taylor</h2>

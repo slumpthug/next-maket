@@ -9,13 +9,13 @@ const PartnersPart = ({words, orangeWord}) => {
         <div className='PartnersPart'>
             <h2 className='main__title main__title_PartnersPart'>{words} <span className='orange-text'>{orangeWord}</span></h2>
             <div className='PartnersPart__slider'>
-                <Image className='PartnersPart__img' src={logoTwo} />
-                <Image className='PartnersPart__img' src={logo} />
-                <Image className='PartnersPart__img' src={logoTwo} />
-                <Image className='PartnersPart__img' src={logo} />
-                <Image className='PartnersPart__img' src={logoTwo} />
-                <Image className='PartnersPart__img' src={logo} />
-                <Image className='PartnersPart__img' src={logoTwo} />
+                <Image className='PartnersPart__img' src={logoTwo} alt='java logo'/>
+                <Image className='PartnersPart__img' src={logo} alt='css logo'/>
+                <Image className='PartnersPart__img' src={logoTwo} alt='java logo'/>
+                <Image className='PartnersPart__img' src={logo} alt='css logo'/>
+                <Image className='PartnersPart__img' src={logoTwo} alt='java logo'/>
+                <Image className='PartnersPart__img' src={logo} alt='css logo'/>
+                <Image className='PartnersPart__img' src={logoTwo} alt='java logo'/>
             </div>
         </div>
     );
