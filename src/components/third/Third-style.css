@@ -95,4 +95,44 @@
         flex-direction: column;
         row-gap: 30px;
     }
+
+    .Third__card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .Third__card {
+        padding: 32px 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .Third__card-logo {
+        column-gap: 0px;
+    }
+
+    .Third__card {
+        height: 260px;
+        padding: 20px 22px;
+    }
+
+    .Third__card-title {
+        width: 200px;
+        font-size: 25px;
+    }
+    
+    .Third__card-list {
+        width: 150px;
+        row-gap: 12px;
+    }
+    
+    .Third__card-list li {
+        font-size: 18px;
+    }
+
+    .Third__lampaTwo {
+        width: 100%;
+        height: 300px;
+    }
 }

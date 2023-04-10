@@ -19,7 +19,9 @@ const First = () => {
                     </h1>
                     <div className="main-part__btn-cont">
                         <button className='main-part__btn btn-one'>Portfolio</button>
-                        <MainBtn text='Check with us'/>
+                        <div className='center'>
+                            <MainBtn text='Check with us'/>
+                        </div>
                     </div>
                 </div>
                 <div className='main-part__img-cont'>

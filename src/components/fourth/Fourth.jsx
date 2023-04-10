@@ -14,30 +14,30 @@ const Fourth = () => {
                 <div className='Fourth__card-cont-top'>
                     <div className="Fourth__card Fourth__card_one">
                         <p>Your deadline is <br/> our religion</p>
-                        <Image className='elipse' src={elipse} alt="" />
+                        <Image className='elipse' src={elipse} alt="elipse" />
                     </div>
                     <div className="Fourth__card Fourth__card_one">
                         <p>Maximum flexibility to <br/> meet your needs </p>
-                        <Image className='elipse' src={elipse} alt="" />
+                        <Image className='elipse' src={elipse} alt="elipse" />
                     </div>
                     <div className="Fourth__card Fourth__card_one">
                         <p>24/7 direct contact <br/> with us </p>
-                        <Image className='elipse' src={elipse} alt="" />
+                        <Image className='elipse' src={elipse} alt="elipse" />
                     </div>
                 </div>
-                <Image className='line' src={line} alt="" />
-                <Image className='lineTwo' src={lineTwo} alt="" />
+                <Image className='line' src={line} alt="line vertically" />
+                <Image className='lineTwo' src={lineTwo} alt="line horizontally" />
                 <div className='Fourth__card-cont-bottom'>
                     <div className="Fourth__card Fourth__card_two">
-                        <Image className='elipse_two' src={elipse} alt="" />
+                        <Image className='elipse_two' src={elipse} alt="elipse" />
                         <p>Personalized approach <br/> towards each case</p>
                     </div>
                     <div className="Fourth__card Fourth__card_two">
-                        <Image className='elipse_two' src={elipse} alt="" />
+                        <Image className='elipse_two' src={elipse} alt="elipse" />
                         <p>No job is too <br/> small</p>
                     </div>
                     <div className="Fourth__card Fourth__card_two">
-                        <Image className='elipse_two' src={elipse} alt="" />
+                        <Image className='elipse_two' src={elipse} alt="elipse" />
                         <p>We are creative, inspired, curious, <br/> logic and open to critic</p>
                     </div>
                 </div>

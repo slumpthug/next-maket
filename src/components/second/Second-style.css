@@ -28,11 +28,7 @@
     }
 
     .Second__advantages-cont {
+        width: 150px;
         font-size: 96px;
-    }
-
-    .Second__advantages-words {
-        width: 200px;
-        /* font-size: 22px; */
     }
 }

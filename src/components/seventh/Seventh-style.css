@@ -118,3 +118,9 @@
         width: 310px;
     }
 }
+
+@media (max-width: 360px) {
+    .Seventh__card-img {
+        width: 100%;
+    }
+}

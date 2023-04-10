@@ -182,3 +182,39 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 370px) {
+    .Fourth__card_one {
+        margin-right: 15px;
+    }
+    
+    .Fourth__card_two {
+        margin-left: 15px;
+    }
+
+    .elipse {
+        right: -23px;
+    }
+    
+    .elipse_two {
+        left: -23px;
+    }
+
+    .Fourth__card p {
+        padding: 14px 10px;
+        font-size: 16px;
+    }
+
+    .Fourth__card-cont-top {
+        row-gap: 160px;
+    }
+    
+    .Fourth__card-cont-bottom {
+        row-gap: 150px;
+    }
+
+    .Fourth__card {
+        width: 120px;
+    }
+
+}
