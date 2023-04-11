@@ -1,0 +1,78 @@
+.container {
+    padding: 60px 230px 160px 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ninth__slider {
+    width: 607px;
+    margin: 0 auto;
+}
+
+.ninth__card {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    text-align: initial;
+    z-index: 1;
+}
+
+.ninth__card_img {
+    width: 100%;
+    height: 100%;
+}
+
+.ninth__card div {
+    position: absolute;
+    bottom: 64px;
+    left: 64px;
+}
+
+.ninth__card div h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.ninth__card div h4 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #F2C94C;
+}
+
+
+@media (max-width: 1680px) {
+    .container {
+        padding: 60px 40px 160px 40px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .container {
+        padding: 60px 20px 160px 20px;
+    }
+}
+
+@media (max-width: 670px) {
+    .container {
+        padding: 60px 0px 160px 0px;
+    }
+
+    .ninth__slider {
+        width: 100%;
+    }
+
+    .ninth__card {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 60px 0px 160px 0px;
+    }
+}

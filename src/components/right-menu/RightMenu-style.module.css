@@ -1,7 +1,11 @@
-.RightMenu {
+.right_menu {
     position: absolute;
     top: 0;
     right: 0;
+    border-left: 1px solid #EDEEE9;
+}
+
+.container {
     padding: 48px 0px 79px 0px;
     width: 90px;
     display: flex;
@@ -9,10 +13,9 @@
     align-items: center;
     justify-content: center;
     row-gap: 284px;
-    border-left: 1px solid #EDEEE9;
 }
 
-.RightMenu__user-part {
+.right_menu__user_part {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,7 +28,7 @@
     transform: rotate(-90deg);
 }
 
-.RightMenu__social-part {
+.right_menu__social_part {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -34,7 +37,7 @@
 }
 
 @media (max-width: 900px) {
-    .RightMenu {
+    .right_menu {
         display: none;
     }
 }

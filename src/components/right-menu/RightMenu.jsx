@@ -1,29 +1,31 @@
 import React from 'react';
-import './RightMenu-style.css';
+import css from './RightMenu-style.module.css';
 import MainBtn from '../main-button/MainBtn';
 import instLogo from '../../../public/right-menu/instagramLogo.svg';
 import Image from 'next/image';
 
 const RightMenu = () => {
     return (
-        <div className='RightMenu'>
-            <div className='RightMenu__user-part'>
-                <MainBtn text='Menu'/>
-                <a href="#">UA</a>
-            </div>
-            <div className='vertically'>
-                <MainBtn text='Get in touch'/>
-            </div>
-            <div className="RightMenu__social-part">
-                <a href="#">
-                    <Image src={instLogo} alt="instagram logo" />
-                </a>
-                <a href="#">
-                    <Image src={instLogo} alt="instagram logo" />
-                </a>
-                <a href="#">
-                    <Image src={instLogo} alt="instagram logo" />
-                </a>
+        <div className={css.right_menu}>
+            <div className={css.container}>
+                <div className={css.right_menu__user_part}>
+                    <MainBtn text='Menu'/>
+                    <a href="#">UA</a>
+                </div>
+                <div className={css.vertically}>
+                    <MainBtn text='Get in touch'/>
+                </div>
+                <div className={css.right_menu__social_part}>
+                    <a href="#">
+                        <Image src={instLogo} alt="instagram logo" />
+                    </a>
+                    <a href="#">
+                        <Image src={instLogo} alt="instagram logo" />
+                    </a>
+                    <a href="#">
+                        <Image src={instLogo} alt="instagram logo" />
+                    </a>
+                </div>
             </div>
         </div>
     );

@@ -1,11 +1,13 @@
 import React from 'react';
-import './TitlePart-style.css';
-import Image from 'next/image';
+import css from './TitlePart-style.module.css';
 
-const TitlePart = ({img}) => {
+const TitlePart = () => {
     return (
-        <div className='TitlePart'>
-            <Image className='TitlePart__titleImg' src={img} alt="" />
+        <div className={css.title_part}>
+            <div className={css.container}>
+                <h2 className={css.title_part__title_one}>UX_Web development_Brand identity</h2>
+                <h2 className={css.title_part__title_two}>UX_Mobile apps_Video_Filmmaking</h2>
+            </div>
         </div>
     );
 };

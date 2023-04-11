@@ -1,11 +1,11 @@
 import React from 'react';
-import './MainBtn-style.css';
+import css from './MainBtn-style.module.css';
 
 const MainBtn = ({text}) => {
     return (
-        <div className='main-part__btn-two'>
-            <div className='main-part__btn-two-circle'></div>
-            <button className='main-part__btn btn-two'>{text}</button>
+        <div className={css.container__btn}>
+            <div></div>
+            <button>{text}</button>
         </div>
     );
 };

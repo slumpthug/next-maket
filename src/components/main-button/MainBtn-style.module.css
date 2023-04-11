@@ -1,9 +1,10 @@
-.main-part__btn-two {
+.container__btn {
     display: inline-block;
     position: relative;
 }
 
-.main-part__btn-two-circle {
+.container__btn div{
+    display: inline-block;
     padding: 20px;
     position: absolute;
     border-radius: 60px;
@@ -11,6 +12,10 @@
     z-index: -1;
 }
 
-.btn-two {
+.container__btn button {
     padding: 14px 0px 14px 17px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    color: #2A524C;
 }

@@ -1,80 +1,83 @@
-.Footer {
+.container {
     padding: 160px 73px 0px 73px;
 }
 
-.Footer__top-cont {
+.footer__top {
     display: flex;
     align-items: center;
     column-gap: 146px;
     margin-bottom: 70px;
 }
 
-.Footer__comunication-part {
+.footer__comunication {
     display: flex;
     flex-direction: column;
     row-gap: 14px;
 }
 
-.Footer__title {
+.footer__comunication h4 {
     font-size: 32px;
     font-weight: 700;
     color: #2A524C;
 }
 
-.Footer__title-address {
+.footer__address h4 {
     margin-bottom: 19px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2A524C;
 }
 
-.Footer__top-cont div a {
+.footer__top div a {
     font-size: 20px;
     font-weight: 300;
     color: #2A524C;
 }
 
-.Footer__top-cont div a:hover {
+.footer__top div a:hover {
    text-decoration: underline;
 }
 
-.Footer__bottom-cont {
+.footer__bottom {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.Footer__copyright {
+.footer__bottom span {
     font-size: 16px;
     font-weight: 200;
     color: #2A524C;
 }
 
-.Footer__rules-links {
+.footer__bottom div {
     display: flex;
     align-items: center;
     column-gap: 38px;
 }
 
-.Footer__rules-links a {
+.footer__bottom div a {
     font-size: 16px;
     font-weight: 200;
     color: #2A524C;
 }
 
-.Footer__rules-links a:hover {
+.footer__bottom div a:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 700px) {
-    .Footer {
+    .container {
         text-align: center;
     }
 
-    .Footer__top-cont {
+    .footer__top {
         margin-bottom: 40px; 
         flex-direction: column;
         row-gap: 30px;
     }
     
-    .Footer__bottom-cont {
+    .footer__bottom {
         flex-direction: column;
         row-gap: 20px;
         align-items: center;

@@ -1,4 +1,4 @@
-.Third {
+.container {
     padding: 0px 165px 160px 165px;
     display: flex;
     flex-direction: column;
@@ -6,21 +6,21 @@
     justify-content: space-between;
 }
 
-.Third__content {
+.third__content {
     display: flex;
     column-gap: 70px;
     align-items: center;
     margin-top: 64px;
 }
 
-.Third__card-cont {
+.third__card_conteiner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     row-gap: 140px;
 }
 
-.Third__card {
+.third__card {
     width: 372px;
     height: 319px;
     padding: 32px 56px;
@@ -28,7 +28,7 @@
     border-radius: 40px;
 }
 
-.Third__card-logo {
+.third__card div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,26 +36,26 @@
     margin-bottom: 16px;
 }
 
-.Third__card-number {
+.third__card div span {
     font-size: 16px;
     color: #323232;
 }
 
-.Third__card-title {
+.third__card h4 {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 19px;
     color: #2A524C;
 }
 
-.Third__card-list {
+.third__card ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     row-gap: 12px;
 }
 
-.Third__card-list li {
+.third__card ul li {
     padding-left: 2rem;
     background-image: url(../../../public/third/check-circle.svg);
     background-position: 0 0;
@@ -64,74 +64,74 @@
 }
 
 @media (max-width: 1880px) {
-    .Third {
+    .container {
         padding: 0px 0px 160px 0px;
     }
 }
 
 @media (max-width: 1560px) {
-    .Third__content {
+    .third__content {
         flex-direction: column;
         align-items: center;
     }
 
-    .Third__card-cont {
+    .third__card_conteiner {
         flex-direction: row;
         column-gap: 140px;
     }
 
-    .Third__lampaTwo {
+    .third__lampa {
         width: 300px;
         height: 300px;
     }
 }
 
 @media (max-width: 900px) {
-    .Third {
+    .container {
         padding: 0px 0px 20px 0px;
     }
 
-    .Third__card-cont {
+    .third__card_conteiner {
         flex-direction: column;
         row-gap: 30px;
     }
 
-    .Third__card {
+    .third__card {
         width: 100%;
     }
 }
 
 @media (max-width: 400px) {
-    .Third__card {
+    .third__card {
         padding: 32px 40px;
     }
 }
 
 @media (max-width: 350px) {
-    .Third__card-logo {
+    .third__card div {
         column-gap: 0px;
     }
 
-    .Third__card {
+    .third__card {
         height: 260px;
         padding: 20px 22px;
     }
 
-    .Third__card-title {
+    .third__card h4 {
         width: 200px;
         font-size: 25px;
     }
     
-    .Third__card-list {
+    .third__card ul {
         width: 150px;
         row-gap: 12px;
     }
     
-    .Third__card-list li {
+    .third__card ul li {
         font-size: 18px;
     }
 
-    .Third__lampaTwo {
+    .third__lampa {
         width: 100%;
         height: 300px;
     }

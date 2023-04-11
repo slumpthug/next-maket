@@ -29,13 +29,6 @@ button {
   background: none;
 }
 
-.main-part__btn {
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  color: #2A524C;
-}
-
 .main__title {
   color: #2A524C;
   font-size: 64px;
@@ -53,6 +46,11 @@ button {
   margin: 0 auto;
 }
 
+/* .number-slide__title_part {
+  min-width: 1700px !important;
+  overflow: scroll !important;
+} */
+
 @media (max-width: 900px) {
   body {
     padding: 24px 16px 64px 16px;
@@ -64,3 +62,5 @@ button {
     font-size: 48px;
   }
 }
+
+

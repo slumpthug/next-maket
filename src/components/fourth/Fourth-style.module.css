@@ -1,4 +1,4 @@
-.Fourth {
+.container {
     padding: 130px 0px 100px 0px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.Fourth__cont {
+.fourth__content {
     padding: 0px 20px;
     width: 100%;
 }
@@ -16,7 +16,7 @@
     width: 100%;
 }
 
-.Fourth__card_one {
+.fourth__card_one {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     margin-bottom: 32px;
 }
 
-.Fourth__card_two {
+.fourth__card_two {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -32,18 +32,28 @@
     margin-top: 32px;
 }
 
-.Fourth__card-cont-top {
+.fourth__content_top {
     display: flex;
     column-gap: 270px;
 }
 
-.Fourth__card-cont-bottom {
+.fourth__content_bottom {
     display: flex;
     column-gap: 290px;
     float: right;
 }
 
-.Fourth__card p {
+.fourth__card_one p {
+    display: inline-block;
+    padding: 16px 36px;
+    background-color: #2A524C;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.fourth__card_two p {
     display: inline-block;
     padding: 16px 36px;
     background-color: #2A524C;
@@ -68,83 +78,81 @@
 }
 
 @media (max-width: 1890px) {
-    .Fourth__card-cont-top {
+    .fourth__content_top {
         column-gap: 220px;
     }
     
-    .Fourth__card-cont-bottom {
+    .fourth__content_bottom {
         column-gap: 280px;
     }
 }
 
 @media (max-width: 1820px) {
-    .Fourth__card-cont-top {
+    .fourth__content_top {
         column-gap: 200px;
     }
     
-    .Fourth__card-cont-bottom {
+    .fourth__content_bottom {
         column-gap: 240px;
     }
 }
 
 @media (max-width: 1720px) {
-    .Fourth__card-cont-top {
+    .fourth__content_top {
         column-gap: 140px;
     }
     
-    .Fourth__card-cont-bottom {
+    .fourth__content_bottom {
         column-gap: 200px;
     }
 }
 
 @media (max-width: 1620px) {
-    .Fourth__card-cont-top {
+    .fourth__content_top {
         column-gap: 140px;
     }
     
-    .Fourth__card-cont-bottom {
+    .fourth__content_bottom {
         column-gap: 140px;
     }
 }
 
 @media (max-width: 1520px) {
-    .Fourth {
+    .container {
         padding: 100px 0px 20px 0px;
     }
 
-    .Fourth__cont {
+    .fourth__content {
         padding: 0px 0px;
         display: flex;
         justify-content: center;
     }
 
-    .Fourth__card-cont-top {
+    .fourth__content_top {
         flex-direction: column;
         align-items: flex-end;
         justify-content: end;
         row-gap: 150px;
     }
     
-    .Fourth__card-cont-bottom {
+    .fourth__content_bottom {
         flex-direction: column;
         align-items: start;
         row-gap: 130px;
     }
 
-    .Fourth__card {
-        width: 290px;
-    }
-
-    .Fourth__card_one {
+    .fourth__card_one {
         flex-direction: row;
         margin: 0;
         margin-right: 32px;
+        width: 290px;
     }
     
-    .Fourth__card_two {
+    .fourth__card_two {
         flex-direction: row;
         margin: 0;
         margin-left: 32px;
+        width: 290px;
     }
 
     .elipse {
@@ -169,26 +177,35 @@
 }
 
 @media (max-width: 800px) {
-    .Fourth {
+    .container {
         padding: 30px 0px 20px 0px;
     }
 
-    .Fourth__card {
+    .fourth__card_one {
         width: 150px;
     }
 
-    .Fourth__card p {
+    .fourth__card_two {
+        width: 150px;
+    }
+
+    .fourth__card_one p {
+        padding: 16px 14px;
+        font-size: 18px;
+    }
+
+    .fourth__card_two p {
         padding: 16px 14px;
         font-size: 18px;
     }
 }
 
 @media (max-width: 370px) {
-    .Fourth__card_one {
+    .fourth__card_one {
         margin-right: 15px;
     }
     
-    .Fourth__card_two {
+    .fourth__card_two {
         margin-left: 15px;
     }
 
@@ -200,20 +217,29 @@
         left: -23px;
     }
 
-    .Fourth__card p {
+    .fourth__card_one p {
         padding: 14px 10px;
         font-size: 16px;
     }
 
-    .Fourth__card-cont-top {
+    .fourth__card_two p {
+        padding: 14px 10px;
+        font-size: 16px;
+    }
+
+    .fourth__content_top {
         row-gap: 160px;
     }
     
-    .Fourth__card-cont-bottom {
+    .fourth__content_bottom {
         row-gap: 150px;
     }
 
-    .Fourth__card {
+    .fourth__card_one {
+        width: 120px;
+    }
+
+    .fourth__card_two {
         width: 120px;
     }
 

@@ -1,36 +1,42 @@
-.LeftMenu {
+.left_menu {
     position: absolute;
     top: 0;
     left: 0;
+    border-right: 1px solid #EDEEE9;
+}
+
+.container {
     padding: 296px 38px 251px 38px;
     display: flex;
     width: 90px;
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
-    border-right: 1px solid #EDEEE9;
 }
 
-.LeftMenu p {
+.container p {
     font-size: 14px;
     font-weight: 300;
     writing-mode:vertical-lr;
     /* transform: rotate(-90deg); */
 }
 
-.LeftMenu__line {
+.left_menu__line {
     height: 350px;
     width: 1px;
     background-color: #656565;
 }
 
-.LeftMenu__arow {
-    width: 24px;
-    height: 24px;
+.left_menu__arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
 }
 
 @media (max-width: 900px) {
-    .LeftMenu {
+    .left_menu {
         display: none;
     }
 }

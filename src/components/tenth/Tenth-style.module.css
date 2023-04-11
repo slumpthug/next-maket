@@ -1,10 +1,10 @@
-.Tenth {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.Tenth__contacts {
+.tenth__contacts {
     padding: 0px 0px 0px 120px;
     width: 800px;
     display: flex;
@@ -12,7 +12,7 @@
     row-gap: 55px;
 }
 
-.Tenth__checkbox-cont {
+.tenth__checkbox {
     display: flex;
     align-items: center;
     column-gap: 24px;
@@ -20,23 +20,23 @@
     margin-bottom: 64px; */
 }
 
-.Tenth__checkbox {
+.tenth__checkbox div {
     display: flex;
     align-items: center;
     column-gap: 8px;
 }
 
-.Tenth__checkbox input {
+.tenth__checkbox div input {
     width: 16px;
     height: 16px;
 }
 
-.Tenth__checkbox p {
+.tenth__checkbox div p {
     font-size: 16px;
     color: #2A524C;
 }
 
-.Tenth__input-top {
+.tenth__input_top {
     width: 100%;
     display: flex;
     align-items: center;
@@ -44,12 +44,12 @@
 
 }
 
-.Tenth__input {
+.tenth__input {
     position: relative;
     width: 100%;
 }
 
-.Tenth__input input{
+.tenth__input input{
     width: 100%;
     border: none;
     border-bottom: 1px solid #E0E0E0;
@@ -58,7 +58,7 @@
     margin-top: 16px;
 }
 
-.Tenth__input span {
+.tenth__input span {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,13 +67,13 @@
     pointer-events: none;
 }
 
-.Tenth__btn-cont {
+.tenth__btns {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.Tenth__btn {
+.tenth__btns div {
     padding: 14px 10px;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     cursor: pointer;
 }
 
-.Tenth__btn button {
+.tenth__btns div button {
     font-size: 16px;
     color: #2A524C;
     font-weight: 600;
@@ -108,12 +108,12 @@
 }
 
 @media (max-width: 1620px) {
-    .Tenth {
+    .container {
         flex-direction: column;
         row-gap: 40px;
     }
     
-    .Tenth__contacts {
+    .tenth__contacts {
         padding: 0px 0px 0px 0px;
     }
 
@@ -124,17 +124,17 @@
 }
 
 @media (max-width: 1000px) {
-    .Tenth__contacts {
+    .tenth__contacts {
         width: 500px;
         row-gap: 32px;
     }
 
-    .Tenth__checkbox-cont {
+    .tenth__checkbox {
         flex-wrap: wrap;
         row-gap: 10px;
     } 
 
-    .Tenth__input-top {
+    .tenth__input_top {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -147,13 +147,13 @@
         height: 450px;
     }
 
-    .Tenth__btn {
+    .tenth__btns div {
         display: none;
     }
 }
 
 @media (max-width: 550px) {
-    .Tenth__contacts {
+    .tenth__contacts {
         width: 100%;
     }
 

@@ -1,4 +1,4 @@
-.Second {
+.container {
     width: 100%;
     padding: 160px 80px;
     display: flex;
@@ -7,7 +7,7 @@
     gap: 40px;
 }
 
-.Second__advantages-cont {
+.container div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,18 +16,18 @@
     color: #2A524C;
 }
 
-.Second__advantages-words {
+.container div span {
     font-size: 32px;
     color: #323232;
 }
 
 @media (max-width: 800px) {
-    .Second {
+    .container {
         padding: 60px 0px;
         justify-content: center;
     }
 
-    .Second__advantages-cont {
+    .container div {
         width: 150px;
         font-size: 96px;
     }
