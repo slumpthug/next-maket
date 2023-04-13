@@ -46,10 +46,9 @@ button {
   margin: 0 auto;
 }
 
-/* .number-slide__title_part {
-  min-width: 1700px !important;
-  overflow: scroll !important;
-} */
+.none {
+  display: none !important;
+}
 
 @media (max-width: 900px) {
   body {

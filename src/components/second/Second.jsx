@@ -8,6 +8,7 @@ function Counter({ val, time, word }) {
     useEffect(() => {
         curVal !== val && setTimeout(setCurrVal, time, curVal + 1);
     }, [curVal])
+
     return (
         <div>
             {curVal}+
@@ -17,17 +18,43 @@ function Counter({ val, time, word }) {
 }
 
 const Counters = [
-    { val: 20, time: 25, word: 'Experts'},
-    { val: 25, time: 20, word: 'Verticals'},
-    { val: 50, time: 15, word: 'Regular customers'},
-    { val: 110, time: 10, word: 'Completed projects'},
+    { val: 20, time: 30, word: 'Experts'},
+    { val: 25, time: 25, word: 'Verticals'},
+    { val: 50, time: 20, word: 'Regular customers'},
+    { val: 110, time: 15, word: 'Completed projects'},
+];
+
+const initialCounters = [
+    { val: 0, word: 'Experts'},
+    { val: 0, word: 'Verticals'},
+    { val: 0, word: 'Regular customers'},
+    { val: 0, word: 'Completed projects'},
 ];
 
 const Second = () => {
+    const [scroll, setScroll] = useState(0);
+
+    const handleScroll = () => {
+        setScroll(window.scrollY);
+      };
+
+      React.useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
+
     return (
         <div className={css.second}>
             <div className={css.container}>
-                {Counters.map(n => <Counter {...n}/>)}
+                { initialCounters.map(count => {
+                    return (
+                        <div className={scroll > 2 ? "none" : ""}>
+                            {count.val}+
+                            <span>{count.word}</span>
+                        </div>
+                    )
+                })}
+                {scroll > 2 ? Counters.map(n => <Counter {...n}/>) : ""}
             </div>
         </div>
     );
