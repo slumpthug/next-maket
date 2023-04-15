@@ -48,13 +48,13 @@ const Second = () => {
             <div className={css.container}>
                 { initialCounters.map(count => {
                     return (
-                        <div className={scroll > 2 ? "none" : ""}>
+                        <div className={scroll > 0 ? "none" : ""}>
                             {count.val}+
                             <span>{count.word}</span>
                         </div>
                     )
                 })}
-                {scroll > 2 ? Counters.map(n => <Counter {...n}/>) : ""}
+                {scroll > 0 ? Counters.map(n => <Counter {...n}/>) : ""}
             </div>
         </div>
     );

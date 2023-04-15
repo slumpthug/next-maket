@@ -1,5 +1,4 @@
-import { Inter } from 'next/font/google';
-import styles from './page.module.css';
+// "use client"
 import First from '@/components/first/First';
 import Second from '@/components/second/Second';
 import Third from '@/components/third/Third';
@@ -15,12 +14,16 @@ import Tenth from '@/components/tenth/Tenth';
 import Footer from '@/components/footer/Footer';
 import RightMenu from '@/components/right-menu/RightMenu';
 import LeftMenu from '@/components/left-menu/LeftMenu';
+import Loader from '@/components/loader/Loader';
+// import { useEffect } from 'react';
 
-const inter = Inter({ subsets: ['latin'] })
+// useEffect(() => {
+//   window.scrollTo(0,0)
+// }, []);
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <First/>
       <Second/>
       <Third/>
@@ -36,6 +39,7 @@ export default function Home() {
       <Footer/>
       <RightMenu/>
       <LeftMenu/>
+      <Loader/>
     </main>
   )
 }
