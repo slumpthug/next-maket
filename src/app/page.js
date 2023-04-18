@@ -15,6 +15,10 @@ import Footer from '@/components/footer/Footer';
 import RightMenu from '@/components/right-menu/RightMenu';
 import LeftMenu from '@/components/left-menu/LeftMenu';
 import Loader from '@/components/loader/Loader';
+import "swiper/css";
+import "swiper/swiper.min.css";
+
+
 // import { useEffect } from 'react';
 
 // useEffect(() => {
