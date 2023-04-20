@@ -15,16 +15,65 @@ import "swiper/css/effect-creative";
 import { EffectCoverflow} from "swiper";
 import { EffectCreative } from "swiper";
 
+import { motion } from "framer-motion";
+
+const rightAnimation = {
+    hidden: {
+        x: 80,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transition: { delay: custom * 0.2 },
+    }),
+}
+
+const topAnimation = {
+    hidden: {
+        y: -80,
+        opacity: 0,
+    },
+    visible: custom => ({
+        y: 0,
+        opacity: 1,
+        transition: { delay: custom * 0.2 },
+    }),
+}
+
 const Ninth = () => {
     return (
         <div className={css.ninth}>
-            <div className={css.container}>
-                <h2 className='main__title'><span className='orange-text'>Team</span> that Builds Ideas Driven by the Future</h2>
-                <div className={css.ninth__slider}>
+            <motion.div 
+                className={css.container}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                    //once: true, 
+                }}
+            >
+                <motion.h2 
+                    className='main__title'
+                    custom={1}
+                    variants={topAnimation}
+                >
+                    <span className='orange-text'>Team</span> that Builds Ideas Driven by the Future
+                </motion.h2>
+                <motion.div 
+                    className={css.ninth__slider}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                        //once: true, 
+                    }}
+                    custom={1.2}
+                    variants={rightAnimation}
+                >
                     <Swiper
                         effect={"coverflow"}
                         grabCursor={true}
                         centeredSlides={true}
+                        initialSlide={1}
                         slidesPerView={"auto"}
                         coverflowEffect={{
                           rotate: 0,
@@ -64,8 +113,17 @@ const Ninth = () => {
                             </div>
                         </SwiperSlide>
                     </Swiper>   
-                </div>
-                <div className={css.ninth__slider_adap}>
+                </motion.div>
+                <motion.div 
+                    className={css.ninth__slider_adap}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                        //once: true, 
+                    }}
+                    custom={1.2}
+                    variants={rightAnimation}
+                >
                     <Swiper
                       grabCursor={true}
                       effect={"creative"}
@@ -109,8 +167,8 @@ const Ninth = () => {
                             </div>
                       </SwiperSlide>
                     </Swiper>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     );
 };

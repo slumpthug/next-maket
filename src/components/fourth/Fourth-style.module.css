@@ -53,6 +53,14 @@
     color: #fff;
 }
 
+.fourth__card_one p:hover {
+    animation: bottom-to-top 1.4s ease-in infinite alternate;
+}
+
+.fourth__card_two p:hover {
+    animation: bottom-to-top 1.4s ease-in infinite alternate;
+}
+
 .fourth__card_two p {
     display: inline-block;
     padding: 16px 36px;
@@ -75,6 +83,18 @@
 
 .lineTwo {
     display: none;
+}
+
+@keyframes bottom-to-top {
+    0% {
+        transform: translateY( 0px);
+    }
+    50% {
+        transform: translateY( -8px);
+    }
+    100% {
+        transform: translateY( 0px);
+    }
 }
 
 @media (max-width: 1890px) {

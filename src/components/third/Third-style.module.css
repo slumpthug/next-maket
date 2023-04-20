@@ -26,6 +26,11 @@
     padding: 32px 56px;
     border: 1px solid #2A524C;
     border-radius: 40px;
+    transition: all 0.1s;
+}
+
+.third__card:hover {
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .third__card div {
@@ -62,6 +67,15 @@
     background-repeat: no-repeat;
     font-size: 22px;
 }
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 0px #2A524C;
+    }
+    to {
+      box-shadow: 0 0 20px #2A524C;
+    }
+  }
 
 @media (max-width: 1880px) {
     .container {

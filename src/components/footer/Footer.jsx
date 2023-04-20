@@ -1,33 +1,125 @@
+"use client";
 import React from 'react';
 import css from './Footer-style.module.css';
 import logo from '../../../public/first/IVAX.svg';
 import Image from 'next/image';
 
+import { motion } from "framer-motion";
+
+const bottomAnimation = {
+    hidden: {
+        y: 80,
+        opacity: 0,
+    },
+    visible: custom => ({
+        y: 0,
+        opacity: 1,
+        transition: { delay: custom * 0.2 },
+    }),
+}
+
+const topAnimation = {
+    hidden: {
+        y: -80,
+        opacity: 0,
+    },
+    visible: custom => ({
+        y: 0,
+        opacity: 1,
+        transition: { delay: custom * 0.2 },
+    }),
+}
+
 const Footer = () => {
     return (
         <div className={css.footer}>
-            <div className={css.container}>
+            <motion.div 
+                className={css.container}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                    //once: true, 
+                }}
+            >
                 <div className={css.footer__top}>
                     <div className={css.footer__comunication}>
-                        <h4>Communication</h4>
-                        <a href="#">+38 (032) 295 84 53</a>
-                        <a href="#" className='orange-text'>ivax_dev@gmail.com</a>
+                        <motion.h4
+                            custom={1}
+                            variants={topAnimation}
+                        >
+                            Communication
+                        </motion.h4>
+                        <motion.a 
+                            href="#"
+                            custom={1.2}
+                            variants={topAnimation}
+                        >
+                            +38 (032) 295 84 53
+                        </motion.a>
+                        <motion.a 
+                            href="#" 
+                            className='orange-text'
+                            custom={1.4}
+                            variants={topAnimation}
+                        >
+                            ivax_dev@gmail.com
+                        </motion.a>
                     </div>
                     <div className={css.footer__address}>
-                        <h4>Address</h4>
-                        <a href="#">Lviv, Ukraine <br/>
-                        st. Zalizniaka 21</a>
+                        <motion.h4
+                            custom={1}
+                            variants={topAnimation}
+                        >
+                            Address
+                        </motion.h4>
+                        <motion.a 
+                            href="#"
+                            custom={1.2}
+                            variants={topAnimation}
+                        >
+                            Lviv, Ukraine <br/>
+                            st. Zalizniaka 21
+                        </motion.a>
                     </div>
                 </div>
-                <div className={css.footer__bottom}>
-                    <Image width="83px" src={logo} alt="company's logo" />
-                    <span>Copyright © 2022 IVAX</span>
+                <motion.div 
+                    className={css.footer__bottom}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                        //once: true, 
+                    }}
+                >
+                    <motion.div
+                        custom={1}
+                        variants={bottomAnimation}
+                    >
+                        <Image width="83px" src={logo} alt="company's logo" />
+                    </motion.div>
+                    <motion.span
+                        custom={1.2}
+                        variants={bottomAnimation}
+                    >
+                        Copyright © 2022 IVAX
+                    </motion.span>
                     <div>
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Privacy Policy </a>
+                        <motion.a 
+                            href="#"
+                            custom={1.4}
+                            variants={bottomAnimation}
+                        >
+                            Terms of Use
+                        </motion.a>
+                        <motion.a 
+                            href="#"
+                            custom={1.4}
+                            variants={bottomAnimation}
+                        >
+                            Privacy Policy 
+                        </motion.a>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     );
 };

@@ -12,6 +12,7 @@ body {
   padding: 47px 90px 87px 90px;
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
 }
 
 ul, li {
