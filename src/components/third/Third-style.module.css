@@ -8,7 +8,7 @@
 
 .third__content {
     display: flex;
-    column-gap: 70px;
+    column-gap: 160px;
     align-items: center;
     margin-top: 64px;
 }
@@ -31,6 +31,7 @@
 
 .third__card:hover {
     animation: glow 1s ease-in-out infinite alternate;
+    border: 1px solid #F2C94C;
 }
 
 .third__card div {
@@ -68,12 +69,38 @@
     font-size: 22px;
 }
 
+.third__img {
+    position: relative;
+}
+
+.glow {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 240px;
+    height: 240px;
+    background-color: #F2C94C;
+    border-radius: 50%;
+    animation: glowTwo 1s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
 @keyframes glow {
     from {
-      box-shadow: 0 0 0px #2A524C;
+      box-shadow: 0 0 0px #F2C94C;
     }
     to {
-      box-shadow: 0 0 20px #2A524C;
+      box-shadow: 0 0 20px #F2C94C;
+    }
+  }
+
+  @keyframes glowTwo {
+    from {
+      box-shadow: 0 0 20px #F2C94C;
+    }
+    to {
+      box-shadow: 0 0 80px #F2C94C, 0 0 100px #F2C94C, 0 0 120px #F2C94C;
     }
   }
 
@@ -94,9 +121,15 @@
         column-gap: 140px;
     }
 
-    .third__lampa {
+    .third__bulb {
         width: 300px;
         height: 300px;
+    }
+
+    .glow {
+        top: 40px;
+        width: 140px;
+        height: 140px;
     }
 }
 
@@ -145,7 +178,7 @@
         font-size: 18px;
     }
 
-    .third__lampa {
+    .third__bulb {
         width: 100%;
         height: 300px;
     }

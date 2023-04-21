@@ -167,6 +167,11 @@ const Tenth = () => {
                 </motion.div>
                 <motion.div 
                     className={css.tenth__map}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                        //once: true, 
+                    }}
                     custom={1}
                     variants={rightAnimation}
                 >

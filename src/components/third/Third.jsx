@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import css from './Third-style.module.css';
-import lampaTwo from '../../../public/third/lampaTwo.svg';
+import bulbTwo from '../../../public/third/bulbTwo.svg';
 import cardLogo from '../../../public/third/cardLogo.svg';
 import Image from 'next/image';
 
@@ -111,10 +111,12 @@ const Third = () => {
                         </motion.div>
                     </motion.div>
                     <motion.div 
+                        className={css.third__img}
                         custom={2}
                         variants={bottomAnimation}
                     >
-                        <Image className={css.third__lampa} src={lampaTwo} alt="bulb" />
+                        <div className={css.glow}></div>
+                        <Image className={css.third__bulb} src={bulbTwo} alt="bulb" />
                     </motion.div>
                     <motion.div 
                         className={css.third__card_conteiner}
