@@ -21,6 +21,13 @@
     color: #323232;
 }
 
+@media (max-width: 1800px) {
+    .container div {
+        width: 200px;
+        font-size: 120px;
+    }
+}
+
 @media (max-width: 800px) {
     .container {
         padding: 60px 0px;

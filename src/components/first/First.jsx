@@ -67,6 +67,7 @@ const First = () => {
             <motion.div 
                 custom={1}
                 variants={titleAnimation}
+                className={css.first__logo_cont}
             >
                 <Image className={css.first__logo} src={logo} alt="company`s logo" />
             </motion.div>
@@ -125,7 +126,10 @@ const First = () => {
                             <Image className={css.circle} src={circleTwo} alt="circle"/>
                         </motion.div>
                     </div>
-                    <Image className={css.bulb} src={bulb} alt="bulb"/>
+                    <div>
+                        <div className={css.glow}></div>
+                        <Image className={css.bulb} src={bulb} alt="bulb"/>
+                    </div>
                 </motion.div>
             </div>
         </motion.div>

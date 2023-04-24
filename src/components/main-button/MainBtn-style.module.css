@@ -1,13 +1,14 @@
 .container__btn {
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
 .container__btn div {
     display: inline-block;
     padding: 20px;
     position: absolute;
-    border-radius: 60px;
+    border-radius: 50%;
     border: 1px solid #F2C94C;
     z-index: -1;
     transition: all .5s;
@@ -24,4 +25,15 @@
     font-size: 16px;
     cursor: pointer;
     color: #2A524C;
+}
+
+@media (max-width: 1800px) { 
+    .container__btn div {
+        padding: 16px;
+    }
+    
+    .container__btn button {
+        padding: 12px 0px 0px 15px;
+        font-size: 12px;
+    }
 }

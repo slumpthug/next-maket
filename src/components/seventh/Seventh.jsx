@@ -190,7 +190,7 @@ const Seventh = () => {
                         custom={2.4}
                         variants={cardAnimation}
                     >
-                        <Image className='Seventh__card-img' src={cardImg} alt="vertical wavy lines" />
+                        <Image className={css.seventh__card_img} src={cardImg} alt="vertical wavy lines" />
                         <div className='Seventh__card-info'>
                             <span>DESIGN</span>
                             <h4>Unique Product Design</h4>

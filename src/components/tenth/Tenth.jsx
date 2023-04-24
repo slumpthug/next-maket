@@ -105,7 +105,7 @@ const Tenth = () => {
                             </motion.span>
                             <motion.input 
                                 type="text"
-                                custom={1.4}
+                                custom={0.2}
                                 variants={topAnimation}
                             />
                         </div>
@@ -118,7 +118,7 @@ const Tenth = () => {
                             </motion.span>
                             <motion.input 
                                 type="text"
-                                custom={1.4}
+                                custom={0.2}
                                 variants={topAnimation}
                             />
                         </div>
@@ -132,7 +132,7 @@ const Tenth = () => {
                         </motion.span>
                         <motion.input 
                             type="text"
-                            custom={1.4}
+                            custom={0.2}
                             variants={topAnimation}
                         />
                     </div>
@@ -145,7 +145,7 @@ const Tenth = () => {
                         </motion.span>
                         <motion.input 
                             type="text"
-                            custom={1.5}
+                            custom={0.2}
                             variants={topAnimation}
                         />
                     </div>
@@ -159,6 +159,7 @@ const Tenth = () => {
                         <motion.div
                             custom={1.4}
                             variants={topAnimation}
+                            className={css.tenth__btn}
                         >
                             <Image src={fluent} alt="fluent"/>
                             <button>Attach file</button>

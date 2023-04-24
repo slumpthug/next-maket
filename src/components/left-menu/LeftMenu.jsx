@@ -12,10 +12,10 @@ const LeftMenu = () => {
                 <div className={css.left_menu__line}></div>
                 <div className={css.left_menu__arrows}>
                     <div>
-                        <Image width="100%" src={ArrowUp} alt="arrow up" />
+                        <Image className={css.arrow} src={ArrowUp} alt="arrow up" />
                     </div>
                     <div>
-                        <Image width="100%" src={ArrowDown} alt="arrow down yellow" />
+                        <Image className={css.arrow} width="100%" src={ArrowDown} alt="arrow down yellow" />
                     </div>
                 </div>
             </div>

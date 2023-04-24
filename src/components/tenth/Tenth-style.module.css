@@ -29,6 +29,7 @@
 .tenth__checkbox div input {
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .tenth__checkbox div p {
@@ -41,7 +42,6 @@
     display: flex;
     align-items: center;
     column-gap: 32px;
-
 }
 
 .tenth__input {
@@ -49,13 +49,24 @@
     width: 100%;
 }
 
+
 .tenth__input input{
     width: 100%;
+    padding-bottom: 2px;
     border: none;
     border-bottom: 1px solid #E0E0E0;
     outline: none;
     font-size: 16px;
     margin-top: 16px;
+    transition: all .5s;
+}
+
+.tenth__input:focus-within input {
+    border-bottom: 1px solid #F2C94C;
+}
+
+.tenth__input:focus-within span {
+    color: #F2C94C !important;
 }
 
 .tenth__input span {
@@ -65,6 +76,7 @@
     font-size: 16px;
     color: #2A524C;
     pointer-events: none;
+    transition: all .5s;
 }
 
 .tenth__btns {
@@ -73,7 +85,7 @@
     justify-content: space-between;
 }
 
-.tenth__btns div {
+.tenth__btn {
     padding: 14px 14px;
     display: flex;
     align-items: center;
@@ -82,11 +94,16 @@
     cursor: pointer;
 }
 
-.tenth__btns div button {
+.tenth__btn:hover button {
+    color: #F2C94C;
+}
+
+.tenth__btn button {
     font-size: 16px;
     color: #2A524C;
     font-weight: 600;
     cursor: pointer;
+    transition: all .5s;
 }
 
 .map {
@@ -104,6 +121,10 @@
     .map {
         width: 600px;
         height: 550px;
+    }
+
+    .tenth__btn button {
+        font-size: 12px;
     }
 }
 

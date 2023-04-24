@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.ninth__slider {
+    width: 100%;
+}
+
 .swiper {
     width: 100% !important;
     margin-top: 80px !important;

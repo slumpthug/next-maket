@@ -78,7 +78,7 @@ const Third = () => {
                             variants={cardAnimationOne}
                         >
                             <div>
-                                <Image src={cardLogo} alt="pen logo" />
+                                <Image className={css.card__logo} src={cardLogo} alt="pen logo" />
                                 <span>01</span>
                             </div>
                             <h4>
@@ -97,7 +97,7 @@ const Third = () => {
                             variants={cardAnimationOne}
                         >
                             <div>
-                                <Image src={cardLogo} alt="pen logo" />
+                                <Image className={css.card__logo} src={cardLogo} alt="pen logo" />
                                 <span>02</span>
                             </div>
                             <h4>
@@ -133,7 +133,7 @@ const Third = () => {
                             variants={cardAnimationTwo}
                         >
                             <div>
-                                <Image src={cardLogo} alt="pen logo" />
+                                <Image className={css.card__logo} src={cardLogo} alt="pen logo" />
                                 <span>03</span>
                             </div>
                             <h4>
@@ -151,7 +151,7 @@ const Third = () => {
                             variants={cardAnimationTwo}
                         >
                             <div>
-                                <Image src={cardLogo} alt="pen logo" />
+                                <Image className={css.card__logo} src={cardLogo} alt="pen logo" />
                                 <span>04</span>
                             </div>
                             <h4>

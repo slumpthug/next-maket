@@ -72,6 +72,70 @@
     display: none;
 }
 
+@media (max-width: 1800px) { 
+    .seventh__nav {
+        margin-bottom: 50px;
+    }
+    
+    .seventh__nav div {
+        column-gap: 50px;
+    }
+    
+    .seventh__nav div a {
+        font-size: 14px;
+    }
+    
+    .seventh__nav div a:hover {
+        color: #F2C94C;
+    }
+    
+    .seventh__nav div a:hover span {
+        color: #F2C94C;
+    }
+    
+    .seventh__nav div a span {
+        font-size: 12px;
+    }
+    
+    .seventh__card_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 50px;
+        row-gap: 60px;
+        margin-bottom: 60px;
+    }
+
+    .seventh__card_img {
+        width: 300px;
+        height: 370px;
+    }
+    
+    .seventh__card div {
+        padding: 20px 12px;
+    }
+    
+    .seventh__card div span {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        color: #F2C94C;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    
+    .seventh__card div h4 {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform:capitalize;
+    }
+    
+    .seventh__slider {
+        display: none;
+    }
+
+}
+
 @media (max-width: 1260px) {
     .seventh__nav {
         flex-direction: column;

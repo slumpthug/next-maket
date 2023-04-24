@@ -17,13 +17,13 @@ const RightMenu = () => {
                 </div>
                 <div className={css.right_menu__social_part}>
                     <a href="#">
-                        <Image src={instLogo} alt="instagram logo" />
+                        <Image className={css.inst__logo} src={instLogo} alt="instagram logo" />
                     </a>
                     <a href="#">
-                        <Image src={instLogo} alt="instagram logo" />
+                        <Image className={css.inst__logo} src={instLogo} alt="instagram logo" />
                     </a>
                     <a href="#">
-                        <Image src={instLogo} alt="instagram logo" />
+                        <Image className={css.inst__logo} src={instLogo} alt="instagram logo" />
                     </a>
                 </div>
             </div>

@@ -55,21 +55,25 @@
     width: 50px;
     right: 170px;
     top: 100px;
+    animation: circleMove 1s linear infinite;
 }
 
 .circles div:nth-child(2) {
     right: 270px;
+    animation: circleMoveTwo 1s linear infinite;
 }
 
 .circles div:nth-child(3) {
     width: 30px;
     top: 120px;
     right: 320px;
+    animation: circleMove 0.7s linear infinite;
 }
 
 .circles div:nth-child(4) {
     top: 90px;
     left: 130px;
+    animation: circleMoveTwo 0.8s linear infinite;
 }
 
 .circle {
@@ -84,7 +88,134 @@
     width: 100%;
 }
 
-@media (max-width: 1690px) {
+.first__logo_cont {
+    display: inline-block;
+}
+
+.glow {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 370px;
+    height: 370px;
+    background-color: #F2C94C;
+    border-radius: 50%;
+    animation: glowTwo 1s ease-in-out infinite alternate;
+    z-index: -1;
+}
+
+@keyframes glowTwo {
+    from {
+      box-shadow: 0 0 20px #F2C94C;
+    }
+    to {
+      box-shadow: 0 0 80px #F2C94C, 0 0 100px #F2C94C, 0 0 120px #F2C94C;
+    }
+  }
+
+@keyframes circleMove {
+    from {
+        -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg);
+      }
+}
+
+@keyframes circleMoveTwo {
+    from {
+        -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(-360deg) translateX(10px) rotate(-360deg);
+      }
+}
+
+@media (max-width: 1800px) {
+    .first__logo {
+        width: 80px;
+    }
+
+    .first__title {
+        margin-top: 140px;
+        margin-left: 20px;
+    }
+    
+    .first__title h1 {
+        font-size: 100px;
+        line-height: 120px;
+    }
+    
+    .first__btn {
+        column-gap: 30px;
+        margin-top: 60px;
+        margin-left: 330px;
+    }
+    
+    .first__btn_one {
+        padding: 12px 34px;
+        font-size: 12px;
+    }
+
+    .first__img {
+        position: relative;
+        width: 400px;
+        height: 600px;
+    }
+    
+    .circles div:nth-child(1) {
+        width: 35px;
+        right: 70px;
+        top: 70px;
+    }
+    
+    .circles div:nth-child(2) {
+        width: 50px;
+        right: 130px;
+        top: 0px;
+    }
+    
+    .circles div:nth-child(3) {
+        width: 20px;
+        top: 85px;
+        right: 170px;
+    }
+    
+    .circles div:nth-child(4) {
+        width: 50px;
+        top: 60px;
+        left: 40px;
+    }
+    
+    .circle {
+        width: 100%;
+    }
+    
+    .bulb {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 400px;
+        height: 500px;
+    }
+
+    .glow {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 270px;
+        height: 270px;
+        background-color: #F2C94C;
+        border-radius: 50%;
+        animation: glowTwo 1s ease-in-out infinite alternate;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1480px) {
     .circles {
         display: none;
     }
@@ -96,21 +227,26 @@
     }
 
     .first__title h1 {
-        font-size: 140px;
-        line-height: 170px;
+        font-size: 100px;
+        line-height: 130px;
         color: #2A524C;
     }
 
     .first__btn {
         margin-left: 0px;
     }
-}
 
-@media (max-width: 1480px) {
-    .first__title h1 {
-        font-size: 100px;
-        line-height: 130px;
-        color: #2A524C;
+    .glow {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 280px;
+        height: 280px;
+        background-color: #F2C94C;
+        border-radius: 50%;
+        animation: glowTwo 1s ease-in-out infinite alternate;
+        z-index: -1;
     }
 }
 
@@ -134,6 +270,7 @@
         position: initial;
         transform: translate(0px, 0px);
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -145,6 +282,20 @@
 
     .first__img {
         width: 300px;
+        height: 420px;
+    }
+
+    .glow {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 210px;
+        height: 210px;
+        background-color: #F2C94C;
+        border-radius: 50%;
+        animation: glowTwo 1s ease-in-out infinite alternate;
+        z-index: -1;
     }
 }
 
@@ -164,5 +315,10 @@
 
     .first__img {
         width: 100%;
+        height: 100%;
+    }
+
+    .glow {
+        display: none;
     }
 }

@@ -72,7 +72,42 @@
     height: 340px !important;
 }
 
-@media (max-width: 1910px) {
+@media (max-width: 1800px) {
+    .container {
+        padding: 100px 60px 100px 60px;
+        text-align: center;
+    }
+
+    .eight__content {
+        margin-top: 0px;
+    }
+
+    .eight__info {
+        padding: 120px 0px 220px 0px;
+    }
+
+    .eight__broski {
+        width: 150px;
+        height: 230px;
+    }
+    
+    .eight__broski_two {
+        width: 150px;
+        height: 230px;
+    }
+
+    .eight__broski:hover {
+        width: 250px;
+        height: 425px;
+    }
+    
+    .eight__broski_two:hover {
+        width: 250px;
+        height: 425px;
+    }
+}
+
+@media (max-width: 1500px) {
     .container {
         padding: 100px 0px 100px 0px;
     }
